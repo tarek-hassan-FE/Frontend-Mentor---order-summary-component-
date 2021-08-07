@@ -28,9 +28,9 @@ body {
 }
 
 .card {
-    width: 25%;
+    width: 30%;
     background-color: white;
-    margin-top: 90px;
+    margin-top: 100px;
     border-radius: 20px;
     box-shadow: 0px 5px 50px 0.5px hsl(228deg 45% 44% / 33%);
 }
