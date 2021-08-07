@@ -30,7 +30,7 @@ body {
 .card {
     width: 25%;
     background-color: white;
-    margin-top: 25px;
+    margin-top: 90px;
     border-radius: 20px;
     box-shadow: 0px 5px 50px 0.5px hsl(228deg 45% 44% / 33%);
 }
@@ -40,12 +40,12 @@ body {
     background-size: 100%;
     background-repeat: no-repeat;
     width: 100%;
-    height: 200px;
+    height: 240px;
     border-radius: 20px 20px 0px 0px;
 }
 
 .card-content {
-    padding: 30px 30px;
+    padding: 44px 60px;
     text-align: center;
     font-family: 'Red Hat Display';
 }
