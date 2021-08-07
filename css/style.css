@@ -1,0 +1,193 @@
+:root {
+    --pale-blue: hsl(225, 100%, 94%);
+    --bright-blue: hsl(245, 75%, 52%);
+    --very-pale-blue: hsl(225, 100%, 98%);
+    --desat-blue: hsl(224, 23%, 55%);
+    --dark-blue: hsl(223, 47%, 23%);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--pale-blue);
+    height: 100%;
+}
+
+.container {
+    background-image: url(../images/pattern-background-desktop.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    width: 25%;
+    background-color: white;
+    margin-top: 25px;
+    border-radius: 20px;
+    box-shadow: 0px 5px 50px 0.5px hsl(228deg 45% 44% / 33%);
+}
+
+.card-image {
+    background-image: url('../images/illustration-hero.svg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 200px;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.card-content {
+    padding: 30px 30px;
+    text-align: center;
+    font-family: 'Red Hat Display';
+}
+
+.card-content h1 {
+    font-weight: 900;
+    font-size: 1.5vw;
+}
+
+.card-content p:first-of-type {
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--desat-blue);
+    margin-top: 20px;
+}
+
+.plan {
+    background-color: var(--very-pale-blue);
+    margin-top: 24px;
+    padding: 20px 10px;
+    border-radius: 8px;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    column-gap: 10px;
+    align-items: center;
+}
+
+.plan div p {
+    text-align: left;
+    font-size: 14px;
+}
+
+.plan div p:first-child {
+    margin-top: 0;
+    font-weight: 900;
+    color: black;
+}
+
+.plan div p:last-of-type {
+    margin-top: 5px;
+    color: var(--desat-blue);
+}
+
+.plan a {
+    font-weight: 900;
+    color: var(--bright-blue);
+    text-align: left;
+}
+
+.card-content button {
+    width: 100%;
+    margin-top: 24px;
+    background-color: var(--bright-blue);
+    color: white;
+    padding: 15px;
+    border-radius: 8px;
+    border: 0px;
+    cursor: pointer;
+    outline: none;
+    font-weight: 700;
+    box-shadow: 0px 5px 30px 1px hsl(245deg 75% 52% / 49%);
+}
+
+.card-content [title='cancel order'] {
+    margin-top: 20px;
+    font-weight: 900;
+    font-size: 14px;
+    color: var(--desat-blue);
+}
+
+.attribution {
+    margin-top: 40px;
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+@media (min-width: 600px) and (max-width:999px) {
+    .card {
+        width: 50%;
+    }
+    .card-image {
+        height: 140px;
+    }
+    .card-content h1 {
+        font-size: 3vw;
+    }
+    .card-content p:first-of-type {
+        font-size: 13.5px;
+        line-height: 24px;
+    }
+    .plan div p {
+        font-size: 12px;
+    }
+    .plan a {
+        font-size: 12px;
+    }
+}
+
+@media (min-width: 1000px) and (max-width:1439px) {
+    .card {
+        width: 30%;
+    }
+    .card-image {
+        height: 140px;
+    }
+    .card-content h1 {
+        font-size: 2vw;
+    }
+    .card-content p:first-of-type {
+        font-size: 13.5px;
+        line-height: 24px;
+    }
+    .plan div p {
+        font-size: 12px;
+    }
+    .plan a {
+        font-size: 12px;
+    }
+}
+
+@media (max-width:599px) {
+    .card {
+        width: 85%;
+    }
+    .card-image {
+        height: 140px;
+    }
+    .card-content h1 {
+        font-size: 6vw;
+    }
+    .card-content p:first-of-type {
+        font-size: 13.5px;
+        line-height: 24px;
+    }
+    .plan div p {
+        font-size: 12px;
+    }
+    .plan a {
+        font-size: 12px;
+    }
+}
